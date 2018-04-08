@@ -12,6 +12,8 @@
 		F41AC7FA2077CC48005F331D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41AC7F82077CC48005F331D /* Main.storyboard */; };
 		F41AC7FC2077CC4A005F331D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41AC7FB2077CC4A005F331D /* Assets.xcassets */; };
 		F41AC7FF2077CC4A005F331D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41AC7FD2077CC4A005F331D /* LaunchScreen.storyboard */; };
+		F41AC8082077D2CD005F331D /* crayon_1-1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41AC8062077CD16005F331D /* crayon_1-1.ttf */; };
+		F479737320787CB30040D1C9 /* UnlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479737220787CB30040D1C9 /* UnlockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F41AC7FB2077CC4A005F331D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41AC7FE2077CC4A005F331D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41AC8002077CC4A005F331D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41AC8062077CD16005F331D /* crayon_1-1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "crayon_1-1.ttf"; sourceTree = "<group>"; };
+		F479737220787CB30040D1C9 /* UnlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		F41AC7F32077CC48005F331D /* guessNumber */ = {
 			isa = PBXGroup;
 			children = (
+				F41AC8062077CD16005F331D /* crayon_1-1.ttf */,
 				F41AC7F42077CC48005F331D /* AppDelegate.swift */,
 				F41AC7F62077CC48005F331D /* ViewController.swift */,
+				F479737220787CB30040D1C9 /* UnlockViewController.swift */,
 				F41AC7F82077CC48005F331D /* Main.storyboard */,
 				F41AC7FB2077CC4A005F331D /* Assets.xcassets */,
 				F41AC7FD2077CC4A005F331D /* LaunchScreen.storyboard */,
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41AC8082077D2CD005F331D /* crayon_1-1.ttf in Resources */,
 				F41AC7FF2077CC4A005F331D /* LaunchScreen.storyboard in Resources */,
 				F41AC7FC2077CC4A005F331D /* Assets.xcassets in Resources */,
 				F41AC7FA2077CC48005F331D /* Main.storyboard in Resources */,
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F479737320787CB30040D1C9 /* UnlockViewController.swift in Sources */,
 				F41AC7F72077CC48005F331D /* ViewController.swift in Sources */,
 				F41AC7F52077CC48005F331D /* AppDelegate.swift in Sources */,
 			);
