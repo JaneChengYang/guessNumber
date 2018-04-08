@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
     }
+    //觸發tap時的方法
     var tap = 0
     @IBAction func tapGesture(_ sender: Any) {
         view.endEditing(true)
@@ -57,14 +58,12 @@ class ViewController: UIViewController {
             tap = 0
         }
     }
-    
     @IBAction func goButton(_ sender: Any) {
         if let enter = enterTextField.text {
             if enter.count == 4 {
                 var a = 0
                 var b = 0
                 var i = 0
-                
                 frequency += 1
                 frequencyLabel.text = "\(frequency)"
                 //檢查答案
@@ -85,15 +84,16 @@ class ViewController: UIViewController {
                     correct()
                     caveat(title: "成功", message: "Good")
                 }else{
+                //錯的話給提示
                     recordAnswer(answer: enter, a: a, b: b)
                 }
             }else{
                 caveat(title: "錯誤", message: "請輸入四個不一樣的數字")
                 enterTextField.text = ""
             }
-            
         }
-        self.view.endEditing(true)
+        //收起鍵盤
+        view.endEditing(true)
     }
     //重新開始
     @IBAction func againButton(_ sender: Any) {
@@ -109,9 +109,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         topic()
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -125,7 +123,5 @@ class ViewController: UIViewController {
         recordsTextView.text = record1
         enterTextField.text = ""
     }
-
-
 }
 
